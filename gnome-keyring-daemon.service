@@ -1,0 +1,10 @@
+[Unit]
+Description = Gnome Kering Daemon
+
+[Service]
+EnvironmentFile = -%h/.config/gnome-keyring-daemon.conf
+ExecStart = %h/.config/systemd/user/start-gnome-keyring-daemon
+Restart = always
+
+[Install]
+WantedBy = graphical-session-pre.target

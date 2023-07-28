@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec gnome-keyring-daemon --unlock --replace --foreground <<<"${GNOME_KEYRING_DAEMON_PASSWORD}"
