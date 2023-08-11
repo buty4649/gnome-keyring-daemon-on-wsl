@@ -7,4 +7,4 @@ ExecStart = %h/.config/systemd/user/start-gnome-keyring-daemon
 Restart = always
 
 [Install]
-WantedBy = graphical-session-pre.target
+WantedBy = default.target
